@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Trainer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .btn {
+            padding: 5px 10px;
+            background-color:rgb(8, 99, 35) ;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(25, 35, 124);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid rgb(8, 8, 8);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trainer Dashboard</h1>
+    </header>
+    <main>
+        <!-- Trainer Dashboard -->
+        <section>
+            <h2>Trainer List</h2>
+            <button class="btn">Add Trainer</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Expertise</th>
+                        <th>Availability</th>
+                        <th>Contact Info</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Madhan</td>
+                        <td>Technical</td>
+                        <td>Monday - Friday</td>
+                        <td>madhan@gmail.com</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn" style="background-color: rgb(190, 52, 52);">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Opportunities Section -->
+        <section>
+            <h2>Training Opportunities</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Technical</td>
+                        <td>Bangalore</td>
+                        <td>Advanced python Training</td>
+                        <td>
+                            <button class="btn">Express Interest</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Operations Section -->
+        <section>
+            <h2>Operations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Assigned Trainer</th>
+                        <th>Progress</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Schedule Session</td>
+                        <td>Ram</td>
+                        <td>In Progress</td>
+                        <td>
+                            <button class="btn">Update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
